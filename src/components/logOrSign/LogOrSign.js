@@ -1,7 +1,7 @@
 import React from 'react'
 import "./LogOrSign.css";
 import Signup from '../signup/Signup';
-
+import Login from '../Login/login';
 
 const LogOrSign = () => {
   return (
@@ -10,7 +10,9 @@ const LogOrSign = () => {
         <div className='logorsign-box'>
           <Signup />
         </div>
-        <div className='logorsign-box'></div>
+        <div className='logorsign-box'>
+          <Login />
+        </div>
       </div>
     </div>
   );

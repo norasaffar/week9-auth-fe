@@ -1,7 +1,5 @@
 import {useState} from 'react';
-
-import {signupFetch, testFetch} from "../../utils/fetch"
-
+import {signupFetch, testFetch} from "../../utils/fetch";
 import "./Signup.css";
 
 const Signup = () => {
@@ -18,7 +16,7 @@ const Signup = () => {
     console.log("hello world");
     signupFetch(username, email, password);
 
-  }
+  };
 
   return (
     <div className='signup-wrapper'>
