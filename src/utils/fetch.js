@@ -25,6 +25,7 @@ export const signupFetch = async (username, email, password) => {
 };
 
 export const loginFetch = async (username, password) => {
+  console.log("hello login fetch")
     const response = await fetch("http://localhost:5001/users/login",{
       method: "POST",
       mode: "cors",
@@ -38,6 +39,6 @@ export const loginFetch = async (username, password) => {
     });
   
     const data = await response.json();
-    console.log("login done", data);
+    return data;
   
   };

@@ -3,7 +3,7 @@ import "./LogOrSign.css";
 import Signup from '../signup/Signup';
 import Login from '../Login/login';
 
-const LogOrSign = () => {
+const LogOrSign = ({ setLoggedIn }) => {
   return (
    <div className='logorsign-wrapper'>
       <div className='logorsign-inner-container'>
@@ -11,7 +11,7 @@ const LogOrSign = () => {
           <Signup />
         </div>
         <div className='logorsign-box'>
-          <Login />
+          <Login setLoggedIn= {setLoggedIn} />
         </div>
       </div>
     </div>
