@@ -42,3 +42,44 @@ export const loginFetch = async (username, password) => {
     return data;
   
   };
+
+  export const getAllBooks = async () => {
+     const response = await fetch ("http://localhost:5001/books",{
+       method:"GET",
+       mode: "cors",
+       headers:{
+        "Content-Type": "application/json",
+       },
+     });   
+     
+     const data = await response.json();
+
+     return data;
+
+  };
+
+
+    export const addFavBook = async (BookId, username) => {
+    const response = await fetch("http://localhost:5001/users/updateFavBook" ,{
+      method:"PUT",
+      mode: "cors",
+      headers: {
+        "Content-Type":"application/json",
+      },
+        body: JSON.stringify({
+        BookId:BookId ,
+        username: username,
+      }),
+    });
+  
+    const data = await response.json();
+    console.log(data);
+
+    return data;
+  };
+    
+       
+
+
+  
+  

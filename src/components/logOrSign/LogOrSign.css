@@ -14,11 +14,11 @@
  display: flex;
  align-items: center;
  justify-content: space-around;
- border:1px solid green ;
+ border:1px solid rgb(116, 187, 116) ;
 }
 
 .logorsign-box {
     height: 60%;
     width: 20%;
-    border: 1px solid red;
+    border: 1px solid rgb(207, 157, 157);
 }
